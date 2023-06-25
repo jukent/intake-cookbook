@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Intake Demo Readme &#8212; Intake Cookbook</title>
+    <title>How to Cite This Cookbook &#8212; Intake Cookbook</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -54,6 +54,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Introduction to Intake" href="intake_introduction.html" />
+    <link rel="prev" title="Intake Cookbook" href="../README.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -181,9 +183,9 @@ const thebe_selector_output = ".output, .cell_output"
   Preamble
  </span>
 </p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="how-to-cite.html">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    How to Cite This Cookbook
   </a>
  </li>
@@ -242,7 +244,7 @@ All code in Pythia Cookbooks is licensed under Apache 2.0. All other non-code co
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/notebooks/README.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/notebooks/how-to-cite.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -262,10 +264,10 @@ All code in Pythia Cookbooks is licensed under Apache 2.0. All other non-code co
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/ProjectPythia/intake-cookbook//issues/new?title=Issue%20on%20page%20%2Fnotebooks/README.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/ProjectPythia/intake-cookbook//issues/new?title=Issue%20on%20page%20%2Fnotebooks/how-to-cite.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/ProjectPythia/intake-cookbook/edit/main/notebooks/README.md"><button
+        <a class="edit-button" href="https://github.com/ProjectPythia/intake-cookbook/edit/main/notebooks/how-to-cite.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -285,48 +287,6 @@ All code in Pythia Cookbooks is licensed under Apache 2.0. All other non-code co
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> On this page
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#dependencies">
-   Dependencies
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#about-the-data">
-     About the Data
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#hrrr-projection">
-   HRRR Projection
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#data-dictionary">
-   Data Dictionary
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#usage-example">
-   Usage Example
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#combining-a-days-worth-of-data">
-     Combining a Days Worth of Data
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -335,100 +295,11 @@ All code in Pythia Cookbooks is licensed under Apache 2.0. All other non-code co
               
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="intake-demo-readme">
-<h1>Intake Demo Readme<a class="headerlink" href="#intake-demo-readme" title="Permalink to this headline"><i class="fas fa-link"></i></a></h1>
-<p>This repository was made as a educational resource to learn the Python library Intake. It contains an intake catalog pointing to <a class="reference external" href="https://mesowest.utah.edu/html/hrrr/">Mesowest’s High-Resolution Rapid Refresh (HRRR) Zarr data</a>.</p>
-<div class="section" id="dependencies">
-<h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline"><i class="fas fa-link"></i></a></h2>
-<ul class="simple">
-<li><p>requests</p></li>
-<li><p>aiohttp</p></li>
-<li><p>intake</p></li>
-<li><p>s3fs</p></li>
-<li><p>Intake-xarray</p></li>
-<li><p>Intake-markdown</p></li>
-<li><p>cartopy</p></li>
-</ul>
-<div class="section" id="about-the-data">
-<h3>About the Data<a class="headerlink" href="#about-the-data" title="Permalink to this headline"><i class="fas fa-link"></i></a></h3>
-<p>High-Resolution Rapid Refresh (HRRR) is a atmospheric model maintained by <a class="reference external" href="https://www.noaa.gov/">NOAA</a>. As stated on NOAA’s <a class="reference external" href="https://rapidrefresh.noaa.gov/hrrr/">website</a></p>
-<blockquote>
-<div><p>The HRRR is a NOAA real-time 3-km resolution, hourly updated, cloud-resolving, convection-allowing atmospheric model, initialized by 3km grids with 3km radar assimilation. Radar data is
-assimilated in the HRRR every 15 min over a 1-h period adding further detail to that provided by the hourly data assimilation from the 13km radar-enhanced Rapid Refresh.</p>
-</div></blockquote>
-<p>In this cookbook we use a subset of HRRR data maintained by Mesowest on AWS S3 object storage.</p>
-</div>
-</div>
-<div class="section" id="hrrr-projection">
-<h2>HRRR Projection<a class="headerlink" href="#hrrr-projection" title="Permalink to this headline"><i class="fas fa-link"></i></a></h2>
-<p>From Mesowest’s <a class="reference external" href="https://mesowest.utah.edu/html/hrrr/zarr_documentation/html/python_data_loading.html">HRRR Zarr Data Loading Guide</a></p>
-<blockquote>
-The projection description for the spatial grid, which is stored in the HRRR grib2 files, is not available directly in the zarr arrays. Additionally, the zarr data has the x and y coordinates in the native Lambert Conformal Conic projection, but not the latitude and longitude data. The various use cases will have more specific examples of how to handle this information, but here we'll note that:
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>The proj params you need to define the grid correctly are:
-</pre></div>
-</div>
-<p>{‘a’: 6371229,
-‘b’: 6371229,
-‘proj’: ‘lcc’,
-‘lon_0’: 262.5,
-‘lat_0’: 38.5,
-‘lat_1’: 38.5,
-‘lat_2’: 38.5}</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>We also offer a &quot;chunk index&quot; that has the latitude and longitude coordinates for the grid, more on that under Use Case 3.
-
-The following code sets up the correct CRS in cartopy:
-</pre></div>
-</div>
-</blockquote>
-```python
-projection = ccrs.LambertConformal(central_longitude=262.5, 
-                                   central_latitude=38.5, 
-                                   standard_parallels=(38.5, 38.5),
-                                    globe=ccrs.Globe(semimajor_axis=6371229,
-                                                     semiminor_axis=6371229))
-```
-</div>
-<div class="section" id="data-dictionary">
-<h2>Data Dictionary<a class="headerlink" href="#data-dictionary" title="Permalink to this headline"><i class="fas fa-link"></i></a></h2>
-<p>This catalog contains a csv source called <code class="docutils literal notranslate"><span class="pre">data_dictionary</span></code> that describes the data in the the hrrrzarr source. The <code class="docutils literal notranslate"><span class="pre">Vertical</span> <span class="pre">Level</span></code> and <code class="docutils literal notranslate"><span class="pre">Parameter</span> <span class="pre">Short</span> <span class="pre">Name</span></code> column are arguments that can be passed to the hrrrzarr source’s <code class="docutils literal notranslate"><span class="pre">level</span></code> and <code class="docutils literal notranslate"><span class="pre">param</span></code> user parameters respectively.</p>
-</div>
-<div class="section" id="usage-example">
-<h2>Usage Example<a class="headerlink" href="#usage-example" title="Permalink to this headline"><i class="fas fa-link"></i></a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
-<span class="kn">import</span> <span class="nn">intake</span>
-<span class="kn">import</span> <span class="nn">datetime</span> <span class="k">as</span> <span class="nn">dt</span>
-<span class="n">user_parameters</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;level&#39;</span><span class="p">:</span> <span class="s1">&#39;top_of_atmosphere&#39;</span><span class="p">,</span>
-                   <span class="s1">&#39;param&#39;</span><span class="p">:</span> <span class="s1">&#39;USWRF&#39;</span><span class="p">,</span>
-                   <span class="s1">&#39;date&#39;</span><span class="p">:</span> <span class="n">dt</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2021</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">6</span><span class="p">)}</span>
-
-<span class="n">cat</span> <span class="o">=</span> <span class="n">intake</span><span class="o">.</span><span class="n">open_catalog</span><span class="p">(</span><span class="s1">&#39;https://raw.githubusercontent.com/jnmorley/intake_demo/main/catalog.yml&#39;</span><span class="p">)</span>
-
-<span class="n">ds</span> <span class="o">=</span> <span class="n">cat</span><span class="o">.</span><span class="n">hrrrzarr</span><span class="p">(</span><span class="o">**</span><span class="n">user_parameters</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-
-</pre></div>
-</div>
-<div class="section" id="combining-a-days-worth-of-data">
-<h3>Combining a Days Worth of Data<a class="headerlink" href="#combining-a-days-worth-of-data" title="Permalink to this headline"><i class="fas fa-link"></i></a></h3>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">intake</span>
-<span class="kn">import</span> <span class="nn">cartopy.crs</span> <span class="k">as</span> <span class="nn">ccrs</span>
-<span class="kn">import</span> <span class="nn">datetime</span> <span class="k">as</span> <span class="nn">dt</span>
-<span class="kn">import</span> <span class="nn">xarray</span> <span class="k">as</span> <span class="nn">xr</span>
-
-<span class="n">cat</span> <span class="o">=</span> <span class="n">intake</span><span class="o">.</span><span class="n">open_catalog</span><span class="p">(</span><span class="s1">&#39;https://raw.githubusercontent.com/jnmorley/intake_demo/main/catalog.yml&#39;</span><span class="p">)</span>
-
-<span class="n">projection</span> <span class="o">=</span> <span class="n">ccrs</span><span class="o">.</span><span class="n">LambertConformal</span><span class="p">(</span><span class="n">central_longitude</span><span class="o">=</span><span class="mf">262.5</span><span class="p">,</span> 
-                                   <span class="n">central_latitude</span><span class="o">=</span><span class="mf">38.5</span><span class="p">,</span> 
-                                   <span class="n">standard_parallels</span><span class="o">=</span><span class="p">(</span><span class="mf">38.5</span><span class="p">,</span> <span class="mf">38.5</span><span class="p">),</span>
-                                    <span class="n">globe</span><span class="o">=</span><span class="n">ccrs</span><span class="o">.</span><span class="n">Globe</span><span class="p">(</span><span class="n">semimajor_axis</span><span class="o">=</span><span class="mi">6371229</span><span class="p">,</span>
-                                                     <span class="n">semiminor_axis</span><span class="o">=</span><span class="mi">6371229</span><span class="p">))</span>
-<span class="n">date</span> <span class="o">=</span> <span class="n">dt</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2019</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
-<span class="n">hours</span> <span class="o">=</span> <span class="p">[</span><span class="n">date</span> <span class="o">+</span> <span class="n">dt</span><span class="o">.</span><span class="n">timedelta</span><span class="p">(</span><span class="n">hours</span><span class="o">=</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">)]</span>
-<span class="n">datasets</span> <span class="o">=</span> <span class="p">[</span><span class="n">cat</span><span class="o">.</span><span class="n">hrrrzarr</span><span class="p">(</span><span class="n">date</span><span class="o">=</span><span class="n">hour</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">set_coords</span><span class="p">(</span><span class="s2">&quot;time&quot;</span><span class="p">)</span> <span class="k">for</span> <span class="n">hour</span> <span class="ow">in</span> <span class="n">hours</span><span class="p">]</span>
-<span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">datasets</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="s1">&#39;time&#39;</span><span class="p">,</span> <span class="n">combine_attrs</span><span class="o">=</span><span class="s2">&quot;drop_conflicts&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
+  <div class="tex2jax_ignore mathjax_ignore section" id="how-to-cite-this-cookbook">
+<h1>How to Cite This Cookbook<a class="headerlink" href="#how-to-cite-this-cookbook" title="Permalink to this headline"><i class="fas fa-link"></i></a></h1>
+<p>The material in Project Pythia’s Intake Cookbook is licensed for free and open consumption and reuse. All code is served under <a class="reference external" href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a>, while all non-code content is licensed under <a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons BY 4.0 (CC BY 4.0)</a>. Effectively, this means you are free to share and adapt this material so long as you give appropriate credit to the Cookbook authors and the Project Pythia community.</p>
+<p>The source code for the book is <a class="reference external" href="https://github.com/ProjectPythia/intake-cookbook">released on GitHub</a> and archived on Zenodo. This DOI will always resolve to the latest release of the book source:</p>
+<p><a class="reference external" href="https://zenodo.org/badge/latestdoi/512825541"><img alt="DOI" src="https://zenodo.org/badge/512825541.svg" /></a></p>
 </div>
 
     <script type="text/x-thebe-config">
@@ -453,7 +324,21 @@ projection = ccrs.LambertConformal(central_longitude=262.5,
 
               </div>
               <!-- Previous / next buttons -->
-<div class='prev-next-area'>
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../README.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Intake Cookbook</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="intake_introduction.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Introduction to Intake</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             </div>
           </div>
